@@ -84,8 +84,27 @@
 }
 
 .secTop {
+    display: flex;
+    flex-direction: column;
     height: 45%;
     background-color: #a58964;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.revIcon {
+    height: 40px;
+    width: 40px;
+    outline: auto;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.secTopRev {
+    text-align: center;
+    font-size: 24px;
 }
 
 .secDown {

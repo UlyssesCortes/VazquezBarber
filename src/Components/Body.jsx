@@ -18,7 +18,9 @@ function Body() {
                 </div>
                 <div className='secRight'>
                     <div className='secTop'>
-
+                        <p className='secTopRev'>The best Barber in London for my money! Professional and high quality.</p>
+                        <div className='revIcon'></div>
+                        <p>John Roberts</p>
                     </div>
                     <div className='secDown'>
 
