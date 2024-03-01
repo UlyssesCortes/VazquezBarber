@@ -2,10 +2,22 @@
     display: flex;
     background-color: #242429;
     color: #c5c5c5;
-    justify-content: space-between;
-    padding: 30px 22rem 30px 22rem;
+    padding: 30px 2rem 30px 2rem;
     font-size: 18px;
     font-family: monospace;
+    justify-content: center;
+    width: 100%;
+}
+
+.NavContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+}
+
+.NavContent h3 {
+    color: white;
 }
 
 .NavTabs {
