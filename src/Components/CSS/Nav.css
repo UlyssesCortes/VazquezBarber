@@ -3,20 +3,18 @@
     background-color: #242429;
     color: #c5c5c5;
     justify-content: space-between;
-    padding: 30px 20rem 30px 20rem;
+    padding: 30px 22rem 30px 22rem;
     font-size: 18px;
-    font-weight: 500;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: monospace;
 }
 
 .NavTabs {
     display: flex;
-    gap: 25px;
+    gap: 35px;
     list-style: none;
     text-decoration: none;
 }
 
 .NavTabs li {
-    font-family: monospace;
     cursor: pointer;
 }

@@ -3,9 +3,10 @@ function Nav() {
     return (
         <nav className='NavBar'>
             <section>
-                <div>Vazquez Barber</div>
+                <h3>Vazquez Barber</h3>
             </section>
             <ul className='NavTabs'>
+                <li>Home</li>
                 <li>Shop</li>
                 <li>Contact</li>
                 <li>About</li>

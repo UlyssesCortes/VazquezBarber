@@ -5,13 +5,13 @@
     background-color: #ffffff;
     color: #c5c5c5;
     justify-content: space-between;
-    margin: 30px 20rem 30px 20rem;
+    margin: 0px 22rem 0px 22rem;
 }
 
 .titleSection {
-    outline: auto;
+    /* outline: auto; */
     width: 100%;
-    height: 500px;
+    height: 450px;
     display: flex;
     justify-content: space-between;
 }
@@ -19,17 +19,24 @@
 .titleSection h2 {
     font-size: 102px;
     width: 60%;
-    padding: 50px 50px 50px 0px;
-    max-width: 11ch;
-    font-size: 84px;
+    padding: 50px 40px 50px 0px;
+    max-width: 12ch;
+    font-size: 100px;
     line-height: .8;
     color: #242429;
     font-family: "Kanit", sans-serif;
-    outline: auto;
+    font-weight: 1000;
 }
 
 .titleVideo {
-    outline: auto;
+    display: flex;
+    justify-content: right;
     width: 40%;
-    height: 500px;
+    height: 450px;
+}
+
+.titleVideo video {
+    height: 450px;
+    width: 400px;
+    object-fit: cover;
 }

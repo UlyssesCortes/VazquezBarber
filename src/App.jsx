@@ -7,6 +7,8 @@ function App() {
     <>
       <Nav />
       <Body />
+      <video src='./assets/Video1.mp4' />
+
     </>
   )
 }
