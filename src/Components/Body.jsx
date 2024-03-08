@@ -23,9 +23,26 @@ function Body() {
                         <p>John Roberts</p>
                     </div>
                     <div className='secDown'>
-
+                        <div className='razorImg'></div>
+                        <h2> BOOK YOUR BEARD SERVICE</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button>CONTACT US TO BOOK</button>
                     </div>
                 </div>
+            </section>
+            <section className='thirdRow'>
+                <h2>OUR LOCATIONS</h2>
+
+                <section className='locations'>
+                    <section className='location1'>
+                        <div className='elGrullo'>
+                            El Grullo
+                        </div>
+                    </section>
+                    <section className='location2'>
+
+                    </section>
+                </section>
             </section>
         </main>
     )
