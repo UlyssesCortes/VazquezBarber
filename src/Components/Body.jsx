@@ -31,17 +31,18 @@ function Body() {
                 </div>
             </section>
             <section className='thirdRow'>
-                <h2>OUR LOCATIONS</h2>
+                <h2 className='thridTitle'>OUR LOCATIONS</h2>
+                <section className='location'>
+                    <div className='topLocation'>
+                        <section>
+                            <h2 className='busName'>VazquezBarber</h2>
+                            <h2 className='cityName'>El Grullo</h2>
+                        </section>
+                        <div className='ImageElGrullo'></div>
+                    </div>
+                    <div className='ElGrullo'>
 
-                <section className='locations'>
-                    <section className='location1'>
-                        <div className='elGrullo'>
-                            El Grullo
-                        </div>
-                    </section>
-                    <section className='location2'>
-
-                    </section>
+                    </div>
                 </section>
             </section>
         </main>

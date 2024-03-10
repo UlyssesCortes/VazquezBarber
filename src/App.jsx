@@ -5,11 +5,7 @@ function App() {
   return (
     <main className='mainSection'>
       <Nav />
-      <section className='blackBorder'>
-        <Body />
-        <video src='./assets/Video1.mp4' />
-      </section>
-
+      <Body />
     </main>
   )
 }
