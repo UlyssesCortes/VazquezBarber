@@ -17,6 +17,8 @@
 }
 
 .NavContent h3 {
+    display: flex;
+    align-items: center;
     color: white;
 }
 
@@ -29,4 +31,10 @@
 
 .NavTabs li {
     cursor: pointer;
+}
+
+.logoImg {
+    object-fit: cover;
+    height: 50px;
+    width: 20px;
 }

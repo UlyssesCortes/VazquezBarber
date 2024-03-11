@@ -1,12 +1,16 @@
 import './CSS/bodyStyle.css'
 import locationImg from '../assets/ElGrullo.jpg'
+import vazPort from '../assets/VazquezPortrait.jpeg'
+import logo from '../assets/Pole.png'
+import ReviewImg from '../assets/reviewImg.png'
+
 function Home() {
     return (
         <main className="Body">
             <section className='firstRow'>
                 <section className='titleSection'>
-                    <h2>WE'RE THE LAST OF A DYING BREED.</h2>
-                    <p>No longer is the Barber shop a place for the elite, we welcome all of London's Gentry to experience Bear Barber.</p>
+                    <h2>EN CADA CORTE, EMERGE EL ARTE ÚNICO</h2>
+                    <p>Ya no es la barbería un lugar exclusivo; damos la bienvenida a toda la distinguida clientela de México para experimentar VazquezBarber.</p>
                     <p className='EST'><em>EST.</em>2008</p>
                 </section>
                 <section className='titleVideo'>
@@ -19,23 +23,24 @@ function Home() {
                 </div>
                 <div className='secRight'>
                     <div className='secTop'>
-                        <p className='secTopRev'>The best Barber in London for my money! Professional and high quality.</p>
-                        <div className='revIcon'></div>
-                        <p>John Roberts</p>
+                        <p className='secTopRev'>Experiencia excepcional, cortes de calidad y atención amigable. ¡Recomendado!</p>
+                        <img className='revIcon' src={ReviewImg} alt="El Grullo Banner" />
+                        <p>Carlos Rodríguez</p>
                     </div>
                     <div className='secDown'>
                         <div className='razorImg'></div>
-                        <h2> BOOK YOUR BEARD SERVICE</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <button>CONTACT US TO BOOK</button>
+                        <h2>RESERVA TU SERVICIO DE CORTE</h2>
+                        <p>¡Agenda tu cita ahora y disfruta de un servicio de barbería excepcional en VazquezBarber!</p>
+                        <button className='buttonHover'>RESERVA AQUÍ</button>
                     </div>
                 </div>
             </section>
             <section className='thirdRow'>
-                <h2 className='thridTitle'>OUR LOCATIONS</h2>
+                <h2 className='thridTitle'>
+                    NUESTRAS UBICACIONES</h2>
                 <section className='topLocation'>
                     <section>
-                        <h2 className='busName'>VazquezBarber</h2>
+                        <h2 className='busName'>Vazquez Barber</h2>
                         <h2 className='cityName'>El Grullo</h2>
                     </section>
                     <img className='imageElGrullo' src={locationImg} alt="El Grullo Banner" />
@@ -51,16 +56,62 @@ function Home() {
                     </ul>
                     <h3 className='contactTitle'>CONTACT</h3>
                     <ul className='contactList'>
-                        <li>020 7946 0827</li>
-                        <li>hey@bearbarberpallmall.com</li>
-                        <li>57 Alexander Road, London N30 8FV</li>
+                        <li><div className='phone'></div> 321 116 4092</li>
+                        <li><div className='email'></div>gilb@vazquezBarber.com</li>
+                        <li><div className='location'></div>20 de Noviembre #13 Col. El Cerrito</li>
                     </ul>
-                    <button>SHOP DETAILS</button>
+                    <button className='buttonHover'>SHOP DETAILS</button>
                 </div>
             </section>
             <section className='fourthRow'>
                 <section className='teamMembers'>
                     <h3 className='rowFourTitle'>OUR TEAM</h3>
+                    <ul className='team'>
+                        <li>
+                            <div className='portraitContainer'>
+                                <img className='portVaz' src={vazPort} alt="El Grullo Banner" />
+                            </div>
+                            <div className='portName'>
+                                <h3>Gilberto Vazquez</h3>
+                                <p>Senior Barber</p>
+                            </div>
+                            <div className='portCity'>
+                                <h3>Vazquez<img className='logoImgCity' src={logo} alt="El Grullo Banner" />Barber</h3>
+                                <p>El Grullo</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section className='footer'>
+                <section className='footerLinks'>
+                    <ul className='foterColumns'>
+                        <li>
+                            <h2>Navigate</h2>
+                            <ul>
+                                <li>Home</li>
+                                <li>Locations</li>
+                                <li>Services</li>
+                                <li>Contact</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>El Grullo</h2>
+                            <ul className='contactList'>
+                                <li><div className='phone'></div> 321 116 4092</li>
+                                <li><div className='email'></div>gilb@vazquezBarber.com</li>
+                                <li><div className='location'></div>20 de Noviembre #13 Col. El Cerrito</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>Social</h2>
+                            <ul>
+                                <li>Instagram</li>
+                                <li>Facebook</li>
+                                <li>Tweitter</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </section>
             </section>
         </main>
