@@ -3,9 +3,11 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    /* outline: auto; */
 }
 
 .mainSection {
+    height: 100%;
     background-color: #242429;
     padding: 0 20px 0 20px;
 }

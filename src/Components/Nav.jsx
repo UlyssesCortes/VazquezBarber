@@ -1,4 +1,4 @@
-import './CSS/Nav.css'
+import './CSS/navStyle.css'
 function Nav() {
     return (
         <nav className='NavBar'>

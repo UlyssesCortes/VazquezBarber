@@ -1,11 +1,11 @@
 import Nav from './Components/Nav'
-import Body from './Components/Body'
+import Home from './Components/Home'
 function App() {
 
   return (
     <main className='mainSection'>
       <Nav />
-      <Body />
+      <Home />
     </main>
   )
 }
