@@ -1,12 +1,20 @@
+:target {
+    scroll-margin-top: 60px;
+}
+
 .NavBar {
     display: flex;
     background-color: #242429;
     color: #c5c5c5;
-    padding: 30px 2rem 30px 2rem;
+    padding: 20px 5rem 20px 2rem;
     font-size: 18px;
     font-family: monospace;
     justify-content: center;
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: all ease-in-out 0.5s;
 }
 
 .NavContent {
@@ -27,14 +35,33 @@
     gap: 35px;
     list-style: none;
     text-decoration: none;
+    align-items: center;
 }
 
 .NavTabs li {
     cursor: pointer;
 }
 
+.NavTabs li a {
+    color: #c5c5c5;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 .logoImg {
     object-fit: cover;
     height: 50px;
     width: 20px;
+}
+
+.NavBar.shrink {
+    padding: 15px 5rem 15px 2rem;
+}
+
+.reservarBtn {
+    background-color: #f8f7f7;
+    color: rgb(65, 64, 64);
+    font-size: 18px;
+    padding: 9px;
+    font-weight: 600;
 }

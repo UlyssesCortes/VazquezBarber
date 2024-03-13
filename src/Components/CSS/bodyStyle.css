@@ -9,6 +9,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    padding-top: 60px;
 }
 
 .firstRow {
@@ -228,6 +229,14 @@
 .contactList {
     list-style: none;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.serceList li {
+    display: flex;
+    gap: 5px;
 }
 
 .contactTitle {
@@ -327,7 +336,11 @@
 
 .phone,
 .email,
-.location {
+.location,
+.scissors,
+.beard,
+.eyebrow,
+.mask {
     display: flex;
     z-index: 1;
     width: 25px;
@@ -346,6 +359,22 @@
 
 .location {
     background-image: url("../../assets/Location.svg");
+}
+
+.scissors {
+    background-image: url("../../assets/scissors.png");
+}
+
+.beard {
+    background-image: url("../../assets/beard.png");
+}
+
+.eyebrow {
+    background-image: url("../../assets/eyebrow.png");
+}
+
+.mask {
+    background-image: url("../../assets/facial-mask.png");
 }
 
 .footer {

@@ -35,7 +35,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className='thirdRow'>
+            <section className='thirdRow' id='locationID'>
                 <h2 className='thridTitle'>
                     NUESTRAS UBICACIONES</h2>
                 <section className='topLocation'>
@@ -48,11 +48,10 @@ function Home() {
                 <div className='ElGrullo'>
                     <h3>SERVICES</h3>
                     <ul className='serceList'>
-                        <li>Beard Styling</li>
-                        <li>Haircut</li>
-                        <li>Skin Fade</li>
-                        <li>Restyle</li>
-                        <li>Buzz Cut</li>
+                        <li><div className='scissors'></div>Corte de cabello</li>
+                        <li><div className='beard'></div>Diseño de barba</li>
+                        <li><div className='eyebrow'></div>Limpieza de ceja</li>
+                        <li><div className='mask'></div>Aplicacion de mascarilla</li>
                     </ul>
                     <h3 className='contactTitle'>CONTACT</h3>
                     <ul className='contactList'>
