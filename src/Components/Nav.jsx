@@ -1,5 +1,8 @@
 import './CSS/navStyle.css'
 import logo from '../assets/Pole.png'
+import Hover1 from '../assets/linkHover1.png'
+import Hover2 from '../assets/linkHover2.png'
+import Hover3 from '../assets/linkHover3.png'
 
 window.addEventListener('scroll', function () {
     var navbar = document.querySelector('.NavBar');
@@ -18,13 +21,33 @@ function Nav() {
                     <h3>Vazquez<img className='logoImg' src={logo} alt="El Grullo Banner" />Barber</h3>
                 </section>
                 <ul className='NavTabs'>
-                    <li><a href='#'>INICIO</a></li>
-                    <li>PRODUCTOS</li>
-                    <li><a href="#locationID">SUCURSALES</a></li>
-                    <li className='reservarBtn'>AGENDAR CITA</li>
+                    <li class='inicio'>
+                        <a href='#'>Inicio
+                            <div class="image-container">
+                                <img class='hover-image' src={Hover2} alt="El Grullo Banner" />
+                            </div>
+                        </a>
+                    </li>
+                    <li className='productos'>
+                        <a>Productos
+                            <div class="image-container">
+                                <img class='hover-image' src={Hover1} alt="El Grullo Banner" />
+                            </div>
+                        </a>
+                    </li>
+                    <li className='locations'>
+                        <a href="#locationID">Sucursales
+                            <div class="image-container">
+                                <img class='hover-image' src={Hover3} alt="El Grullo Banner" />
+                            </div>
+                        </a>
+                    </li>
+                    <li className='reservarBtn'>
+                        <a>Agendar Cita</a>
+                    </li>
                 </ul>
             </section>
-        </nav>
+        </nav >
     )
 }
 

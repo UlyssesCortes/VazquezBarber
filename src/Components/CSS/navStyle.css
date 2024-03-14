@@ -7,7 +7,7 @@
     background-color: #242429;
     color: #c5c5c5;
     padding: 20px 5rem 20px 2rem;
-    font-size: 18px;
+    font-size: 16px;
     font-family: monospace;
     justify-content: center;
     width: 100%;
@@ -28,6 +28,7 @@
     display: flex;
     align-items: center;
     color: white;
+    font-size: 22px;
 }
 
 .NavTabs {
@@ -40,12 +41,18 @@
 
 .NavTabs li {
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
 }
 
 .NavTabs li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #c5c5c5;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 .logoImg {
@@ -59,9 +66,48 @@
 }
 
 .reservarBtn {
-    background-color: #f8f7f7;
-    color: rgb(65, 64, 64);
-    font-size: 18px;
-    padding: 9px;
+    background-color: #7c7b7b;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     font-weight: 600;
+}
+
+.reservarBtn:hover {
+    background-color: #575757;
+}
+
+.reservarBtn a {
+    color: #242429;
+}
+
+.image-container {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+
+.hover-image {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height: auto;
+    transition: bottom 0.3s ease;
+}
+
+.inicio,
+.productos,
+.locations {
+    position: relative;
+}
+
+.inicio:hover .hover-image,
+.productos:hover .hover-image,
+.locations:hover .hover-image {
+    bottom: -25%;
 }
