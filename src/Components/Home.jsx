@@ -3,8 +3,14 @@ import locationImg from '../assets/ElGrullo.jpg'
 import vazPort from '../assets/VazquezPortrait.jpeg'
 import logo from '../assets/Pole.png'
 import ReviewImg from '../assets/reviewImg.png'
+import React from 'react';
 
 function Home() {
+
+    const openCalendly = () => {
+        window.location.href = "https://calendly.com/ulyssescortesp";
+    };
+
     return (
         <main className="Body">
             <section className='firstRow'>
@@ -31,7 +37,7 @@ function Home() {
                         <div className='razorImg'></div>
                         <h2>RESERVA TU SERVICIO DE CORTE</h2>
                         <p>¡Agenda tu cita ahora y disfruta de un servicio de barbería excepcional en VazquezBarber!</p>
-                        <button className='buttonHover'>RESERVA AQUÍ</button>
+                        <button className='buttonHover' onClick={openCalendly}>RESERVA AQUÍ</button>
                     </div>
                 </div>
             </section>
