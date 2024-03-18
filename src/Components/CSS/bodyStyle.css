@@ -18,8 +18,8 @@
 }
 
 .titleSection {
-    height: 450px;
-    width: 60%;
+    min-height: 450px;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
 }
@@ -50,11 +50,13 @@
 .titleVideo {
     display: flex;
     justify-content: right;
-    width: 40%;
-    height: 450px;
+    max-width: 40%;
+    min-height: 450px;
 }
 
 .titleVideo video {
+    display: flex;
+    justify-content: right;
     height: 450px;
     width: 400px;
     object-fit: cover;
@@ -65,29 +67,30 @@
     display: flex;
     width: 100%;
     max-width: 1200px;
-    height: 600px;
+    min-height: 600px;
 }
 
 .secLeft {
-    width: 800px;
     display: flex;
+    max-width: 800px;
 }
 
 .secLeft video {
-    width: 800px;
+    max-width: 100%;
     object-fit: cover;
+    min-height: 600px;
 }
 
 .secRight {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 40%;
 }
 
 .secTop {
     display: flex;
     flex-direction: column;
-    height: 45%;
+    min-height: 45%;
     background-color: #a58964;
     padding: 20px;
     align-items: center;
@@ -430,4 +433,137 @@
 
 .buttonHover {
     transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1279px) {
+
+    .firstRow,
+    .secondRow,
+    .thirdRow,
+    .teamMembers,
+    .footerLinks {
+        max-width: 100%;
+    }
+
+    .titleSection {
+        padding-left: 25px;
+    }
+
+    .titleSection h2 {
+        font-size: 84px;
+
+    }
+
+    .firstRow {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .secLeft {
+        display: flex;
+        max-width: 800px;
+    }
+
+    .secRight {
+        font-size: 16px;
+        /* padding: 15px; */
+    }
+
+    .secTop {
+        font-size: 16px;
+    }
+
+    .secTopRev {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .secDown button {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .titleSection h2 {
+        font-size: 64px;
+
+    }
+
+    .secDown button {
+        font-size: 16px;
+        margin: 15px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .firstRow {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .titleSection {
+        min-height: 400px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titleVideo {
+        max-width: 1200px;
+        min-height: 400px;
+    }
+
+    .titleVideo video {
+        height: 400px;
+        width: 100%;
+    }
+
+    .secDown button {
+        font-size: 16px;
+        margin: 15px;
+    }
+
+    .secLeft {
+        display: none;
+    }
+
+    .secRight {
+        width: 100%;
+    }
+
+    .secTop {
+        min-height: 50%;
+    }
+
+    .revIcon {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin: 20px;
+    }
+
+    .secTopRev {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .secDown h2 {
+        max-width: 40ch;
+    }
+
+    .razorImg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .foterColumns li {
+        font-size: 16px;
+    }
+
 }
