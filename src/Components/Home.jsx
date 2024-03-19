@@ -20,12 +20,12 @@ function Home() {
                     <p className='EST'><em>EST.</em>2008</p>
                 </section>
                 <section className='titleVideo'>
-                    <video src='Video1.mp4' autoPlay muted />
+                    <video src='Video1.mp4' autoPlay loop muted />
                 </section>
             </section>
             <section className='secondRow'>
                 <div className='secLeft'>
-                    <video src='Video2.mp4' autoPlay muted />
+                    <video src='Video2.mp4' autoPlay loop muted />
                 </div>
                 <div className='secRight'>
                     <div className='secTop'>
@@ -61,9 +61,13 @@ function Home() {
                     </ul>
                     <h3 className='contactTitle'>CONTACTO</h3>
                     <ul className='contactList'>
-                        <li><div className='phone'></div> 321 116 4092</li>
-                        <li><div className='email'></div>gilb@vazquezBarber.com</li>
-                        <li><div className='location'></div>20 de Noviembre #13 Col. El Cerrito</li>
+                        <li><div className='phone'></div>
+                            <a href="tel:+3211164092">321 116 4092</a>
+                        </li>
+                        <li><div className='email'></div>
+                            <a href="mailto:gilberto@vazquezbarber.com">gilb@vazquezBarber.com</a>
+                        </li>
+                        <li><div className='location'></div><a href='#'>20 de Noviembre #13 Col. El Cerrito</a></li>
                     </ul>
                     <button className='buttonHover'>MAS DETALLES</button>
                 </div>
@@ -92,7 +96,7 @@ function Home() {
                 <section className='footerLinks'>
                     <ul className='foterColumns'>
                         <li>
-                            <h2>Navigate</h2>
+                            <h2>Explorar</h2>
                             <ul>
                                 <li>
                                     <a href='#'>Inicio</a>
@@ -121,7 +125,7 @@ function Home() {
                             </ul>
                         </li>
                         <li className='social'>
-                            <h2>Social</h2>
+                            <h2>Redes Sociales</h2>
                             <ul>
                                 <li>Instagram</li>
                                 <li>Facebook</li>

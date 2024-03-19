@@ -79,6 +79,7 @@
     max-width: 100%;
     object-fit: cover;
     min-height: 600px;
+    object-position: left;
 }
 
 .secRight {
@@ -228,6 +229,11 @@
     gap: 5px
 }
 
+.contactList li a {
+    color: #242429;
+    text-decoration: none;
+}
+
 .serceList,
 .contactList {
     list-style: none;
@@ -368,7 +374,7 @@
     background-image: url("../../assets/scissors.png");
 }
 
-.beard {
+.bsecLefteard {
     background-image: url("../../assets/beard.png");
 }
 
@@ -629,6 +635,11 @@
 
     .ElGrullo {
         padding: 25px;
+    }
+
+    .team {
+        display: flex;
+        justify-content: center;
     }
 
 }
