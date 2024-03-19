@@ -11,3 +11,7 @@
     background-color: #242429;
     padding: 0 20px 0 20px;
 }
+
+::selection {
+    background-color: #eee2e2;
+}

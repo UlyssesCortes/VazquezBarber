@@ -8,7 +8,7 @@ import React from 'react';
 function Home() {
 
     const openCalendly = () => {
-        window.location.href = "https://calendly.com/ulyssescortesp";
+        window.location.href = "https://calendly.com/gilberto_vazquez";
     };
 
     return (
@@ -52,25 +52,25 @@ function Home() {
                     <img className='imageElGrullo' src={locationImg} alt="El Grullo Banner" />
                 </section>
                 <div className='ElGrullo'>
-                    <h3>SERVICES</h3>
+                    <h3>SERVICIOS</h3>
                     <ul className='serceList'>
                         <li><div className='scissors'></div>Corte de cabello</li>
                         <li><div className='beard'></div>Diseño de barba</li>
                         <li><div className='eyebrow'></div>Limpieza de ceja</li>
                         <li><div className='mask'></div>Aplicacion de mascarilla</li>
                     </ul>
-                    <h3 className='contactTitle'>CONTACT</h3>
+                    <h3 className='contactTitle'>CONTACTO</h3>
                     <ul className='contactList'>
                         <li><div className='phone'></div> 321 116 4092</li>
                         <li><div className='email'></div>gilb@vazquezBarber.com</li>
                         <li><div className='location'></div>20 de Noviembre #13 Col. El Cerrito</li>
                     </ul>
-                    <button className='buttonHover'>SHOP DETAILS</button>
+                    <button className='buttonHover'>MAS DETALLES</button>
                 </div>
             </section>
             <section className='fourthRow'>
                 <section className='teamMembers'>
-                    <h3 className='rowFourTitle'>OUR TEAM</h3>
+                    <h3 className='rowFourTitle'>NUESTRO EQUIPO</h3>
                     <ul className='team'>
                         <li>
                             <div className='portraitContainer'>
@@ -94,21 +94,33 @@ function Home() {
                         <li>
                             <h2>Navigate</h2>
                             <ul>
-                                <li>Home</li>
-                                <li>Locations</li>
-                                <li>Services</li>
-                                <li>Contact</li>
+                                <li>
+                                    <a href='#'>Inicio</a>
+                                </li>
+                                <li>
+                                    <a>Productos</a>
+                                </li>
+                                <li>
+                                    <a href="#locationID">Sucursales</a>
+                                </li>
+                                <li>
+                                    <a onClick={openCalendly}>Agendar Cita</a>
+                                </li>
                             </ul>
                         </li>
                         <li>
                             <h2>El Grullo</h2>
                             <ul className='contactList'>
-                                <li><div className='phone'></div> 321 116 4092</li>
-                                <li><div className='email'></div>gilb@vazquezBarber.com</li>
-                                <li><div className='location'></div>20 de Noviembre #13 Col. El Cerrito</li>
+                                <li><div className='phone'></div>
+                                    <a href="tel:+3211164092">321 116 4092</a>
+                                </li>
+                                <li><div className='email'></div>
+                                    <a href="mailto:gilberto@vazquezbarber.com">gilb@vazquezBarber.com</a>
+                                </li>
+                                <li><div className='location'></div><a href='#'>20 de Noviembre #13 Col. El Cerrito</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li className='social'>
                             <h2>Social</h2>
                             <ul>
                                 <li>Instagram</li>

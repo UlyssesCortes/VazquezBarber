@@ -14,6 +14,9 @@ window.addEventListener('scroll', function () {
 });
 
 function Nav() {
+    const openCalendly = () => {
+        window.location.href = "https://calendly.com/gilberto_vazquez";
+    };
     return (
         <nav className='NavBar'>
             <section className='NavContent'>
@@ -21,7 +24,7 @@ function Nav() {
                     <h3>Vazquez<img className='logoImg' src={logo} alt="El Grullo Banner" />Barber</h3>
                 </section>
                 <ul className='NavTabs'>
-                    <li class='inicio'>
+                    <li className='inicio'>
                         <a href='#'>Inicio
                             <div class="image-container">
                                 <img class='hover-image' src={Hover2} alt="El Grullo Banner" />
@@ -43,7 +46,7 @@ function Nav() {
                         </a>
                     </li>
                     <li className='reservarBtn'>
-                        <a>Agendar Cita</a>
+                        <button onClick={openCalendly}>AGENDAR CITA</button>
                     </li>
                 </ul>
             </section>

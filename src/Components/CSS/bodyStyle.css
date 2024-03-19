@@ -391,6 +391,7 @@
 .footerLinks {
     display: flex;
     width: 1200px;
+
 }
 
 .foterColumns {
@@ -400,6 +401,8 @@
     list-style: none;
     line-height: 1;
     font-family: "Kanit", sans-serif;
+    flex-wrap: wrap;
+
 }
 
 .foterColumns h2 {
@@ -418,9 +421,16 @@
     cursor: pointer;
 }
 
-.foterColumns ul li:hover {
+.foterColumns li a {
+    color: #c5c5c5;
+    text-decoration: none;
+}
+
+.foterColumns ul li:hover,
+.foterColumns ul li a:hover {
     color: #a18a61;
 }
+
 
 .foterColumns ul li {
     transition: color 0.1s ease;
@@ -566,4 +576,84 @@
         font-size: 16px;
     }
 
+    .NavContent h3 {
+        font-size: 18px;
+    }
+
+    .inicio,
+    .productos,
+    .locations {
+        font-size: 0px;
+    }
+
+    .reservarBtn {
+        font-size: 16px;
+        width: 150px;
+    }
+
+
+
+    .NavTabs {
+        gap: 23px;
+    }
+
+    .busName,
+    .cityName {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+
+    .titleSection h2 {
+        font-size: 52px;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .foterColumns {
+        gap: 40px;
+    }
+
+    .busName {
+        width: 55%;
+        font-size: 18px;
+    }
+
+    .cityName {
+        width: 45%;
+        font-size: 18px;
+    }
+
+    .ElGrullo {
+        padding: 25px;
+    }
+
+}
+
+@media screen and (max-width: 459px) {
+    .footer {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .titleSection h2 {
+        font-size: 46px;
+    }
+
+    .NavContent h3 {
+        font-size: 16px;
+    }
+
+    .reservarBtn {
+        font-size: 16px;
+        width: 150px;
+    }
+
+    .NavTabs {
+        gap: 15px;
+    }
 }

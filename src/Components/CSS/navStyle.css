@@ -22,6 +22,7 @@
     justify-content: space-between;
     align-items: center;
     width: 1200px;
+
 }
 
 .NavContent h3 {
@@ -66,21 +67,23 @@
 }
 
 .reservarBtn {
-    background-color: #7c7b7b;
+    border: 1px solid white;
+    border-radius: 1px;
+}
+
+.reservarBtn button:hover {
+    background-color: #424242;
+}
+
+.reservarBtn button {
     padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-weight: 600;
-}
-
-.reservarBtn:hover {
-    background-color: #575757;
-}
-
-.reservarBtn a {
     color: #242429;
+    background-color: #242429;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
 }
 
 .image-container {
