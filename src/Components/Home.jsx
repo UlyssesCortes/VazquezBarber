@@ -1,6 +1,6 @@
 import './CSS/bodyStyle.css'
 import locationImg from '../assets/ElGrullo.jpg'
-import vazPort from '../assets/VazquezPortrait.jpeg'
+import vazPort from '../assets/Vazquez.jpg'
 import logo from '../assets/Pole.png'
 import ReviewImg from '../assets/reviewImg.png'
 import React from 'react';
