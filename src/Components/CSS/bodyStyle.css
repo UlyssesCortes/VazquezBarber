@@ -374,7 +374,7 @@
     background-image: url("../../assets/scissors.png");
 }
 
-.bsecLefteard {
+.beard {
     background-image: url("../../assets/beard.png");
 }
 
@@ -397,7 +397,6 @@
 .footerLinks {
     display: flex;
     width: 1200px;
-
 }
 
 .foterColumns {

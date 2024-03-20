@@ -15,7 +15,8 @@ function Home() {
         <main className="Body">
             <section className='firstRow'>
                 <section className='titleSection'>
-                    <h2>EN CADA CORTE, EMERGE EL ARTE ÚNICO</h2>
+                    {/* <h2>EN CADA CORTE, EMERGE EL ARTE ÚNICO</h2> */}
+                    <h2>EN CADA CORTE, EMERGE EL ARTE UNICO</h2>
                     <p>Ya no es la barbería un lugar exclusivo; damos la bienvenida a toda la distinguida clientela de México para experimentar VazquezBarber.</p>
                     <p className='EST'><em>EST.</em>2008</p>
                 </section>
@@ -102,13 +103,13 @@ function Home() {
                                     <a href='#'>Inicio</a>
                                 </li>
                                 <li>
-                                    <a>Productos</a>
+                                    <a href='#'>Productos</a>
                                 </li>
                                 <li>
                                     <a href="#locationID">Sucursales</a>
                                 </li>
                                 <li>
-                                    <a onClick={openCalendly}>Agendar Cita</a>
+                                    <a href='#' onClick={openCalendly}>Agendar Cita</a>
                                 </li>
                             </ul>
                         </li>
