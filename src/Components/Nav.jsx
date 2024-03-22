@@ -21,7 +21,7 @@ function Nav() {
         <nav className='NavBar'>
             <section className='NavContent'>
                 <section>
-                    <h3>Vazquez<img className='logoImg' src={logo} alt="El Grullo Banner" />Barber</h3>
+                    <a href='#'> <h3 className='logo'>Vazquez<img className='logoImg' src={logo} alt="El Grullo Banner" />Barber</h3></a>
                 </section>
                 <ul className='NavTabs'>
                     <li className='inicio'>

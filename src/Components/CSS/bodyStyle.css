@@ -133,7 +133,7 @@
     text-align: center;
     max-width: 24ch;
     line-height: .8;
-    font-family: "Kanit", sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .secDown button {
@@ -226,12 +226,14 @@
 
 .contactList li {
     display: flex;
-    gap: 5px
+    align-items: center;
+    gap: 5px;
 }
 
 .contactList li a {
     color: #242429;
     text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .serceList,
@@ -245,7 +247,9 @@
 
 .serceList li {
     display: flex;
+    align-items: center;
     gap: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .contactTitle {
@@ -325,6 +329,11 @@
     margin-top: -5px;
     line-height: 1;
     font-family: "Kanit", sans-serif;
+}
+
+.portName p,
+.portCity p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .portCity {
@@ -419,11 +428,13 @@
     flex-direction: column;
     gap: 5px;
     list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .foterColumns li {
     font-size: 18px;
     cursor: pointer;
+
 }
 
 .foterColumns li a {
@@ -596,8 +607,6 @@
         width: 150px;
     }
 
-
-
     .NavTabs {
         gap: 23px;
     }
@@ -647,11 +656,16 @@
     .footer {
         height: 400px;
     }
+
+    .titleSection h2 {
+        font-size: 46px;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
-    .titleSection h2 {
-        font-size: 46px;
+    .firstRow {
+        margin-top: 10px;
     }
 
     .NavContent h3 {

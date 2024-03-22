@@ -18,7 +18,7 @@ function Home() {
                     {/* <h2>EN CADA CORTE, EMERGE EL ARTE ÚNICO</h2> */}
                     <h2>EN CADA CORTE, EMERGE EL ARTE UNICO</h2>
                     <p>Ya no es la barbería un lugar exclusivo; damos la bienvenida a toda la distinguida clientela de México para experimentar VazquezBarber.</p>
-                    <p className='EST'><em>EST.</em>2008</p>
+                    <p className='EST'><em>EST.</em>2017</p>
                 </section>
                 <section className='titleVideo'>
                     <video src='Video1.mp4' autoPlay loop muted />
