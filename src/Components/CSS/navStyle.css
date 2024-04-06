@@ -56,10 +56,6 @@
     text-decoration: none;
 }
 
-.logo {
-    cursor: pointer;
-}
-
 .logoImg {
     object-fit: cover;
     height: 50px;

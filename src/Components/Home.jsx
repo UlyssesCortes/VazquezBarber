@@ -8,14 +8,13 @@ import React from 'react';
 function Home() {
 
     const openCalendly = () => {
-        window.location.href = "https://calendly.com/gilberto_vazquez";
+        window.location.href = "https://calendly.com/gilberto_vazquez/agendar-cita";
     };
 
     return (
         <main className="Body">
             <section className='firstRow'>
                 <section className='titleSection'>
-                    {/* <h2>EN CADA CORTE, EMERGE EL ARTE ÚNICO</h2> */}
                     <h2>EN CADA CORTE, EMERGE EL ARTE UNICO</h2>
                     <p>Ya no es la barbería un lugar exclusivo; damos la bienvenida a toda la distinguida clientela de México para experimentar VazquezBarber.</p>
                     <p className='EST'><em>EST.</em>2017</p>
@@ -128,7 +127,7 @@ function Home() {
                         <li className='social'>
                             <h2>Redes Sociales</h2>
                             <ul>
-                                <li>Instagram</li>
+                                <li><a href='https://www.instagram.com/vazquezbarber3/?utm_source=qr&igsh=NHMxbjdzdGxwMGxx'>Instagram</a></li>
                                 <li>Facebook</li>
                                 <li>Tweitter</li>
                             </ul>

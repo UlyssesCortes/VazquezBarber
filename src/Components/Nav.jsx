@@ -15,13 +15,13 @@ window.addEventListener('scroll', function () {
 
 function Nav() {
     const openCalendly = () => {
-        window.location.href = "https://calendly.com/gilberto_vazquez";
+        window.location.href = "https://calendly.com/gilberto_vazquez/agendar-cita";
     };
     return (
         <nav className='NavBar'>
             <section className='NavContent'>
                 <section>
-                    <a href='#'> <h3 className='logo'>Vazquez<img className='logoImg' src={logo} alt="El Grullo Banner" />Barber</h3></a>
+                    <h3 className='logo'>Vazquez<img className='logoImg' src={logo} alt="El Grullo Banner" />Barber</h3>
                 </section>
                 <ul className='NavTabs'>
                     <li className='inicio'>
