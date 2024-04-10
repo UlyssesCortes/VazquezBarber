@@ -54,6 +54,11 @@
     min-height: 450px;
 }
 
+.videoLoading1 {
+    width: 100%;
+    height: 100%;
+}
+
 .titleVideo video {
     display: flex;
     justify-content: right;
@@ -146,16 +151,12 @@
     cursor: pointer;
     font-size: 18px;
     font-weight: 600;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .razorImg {
-    display: flex;
-    background-image: url("../../assets/Razor.svg");
-    z-index: 1;
     width: 50px;
     height: 50px;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .thirdRow {
@@ -268,6 +269,7 @@
     box-shadow: 0 1px 6px rgba(0, 0, 0, .05);
     font-weight: 600;
     font-size: 18px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .fourthRow {
@@ -359,40 +361,8 @@
 .beard,
 .eyebrow,
 .mask {
-    display: flex;
-    z-index: 1;
     width: 25px;
     height: 25px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.phone {
-    background-image: url("../../assets/Phone.svg");
-}
-
-.email {
-    background-image: url("../../assets/Email.svg");
-}
-
-.location {
-    background-image: url("../../assets/Location.svg");
-}
-
-.scissors {
-    background-image: url("../../assets/scissors.png");
-}
-
-.beard {
-    background-image: url("../../assets/beard.png");
-}
-
-.eyebrow {
-    background-image: url("../../assets/eyebrow.png");
-}
-
-.mask {
-    background-image: url("../../assets/facial-mask.png");
 }
 
 .footer {
@@ -433,8 +403,6 @@
 
 .foterColumns li {
     font-size: 18px;
-    cursor: pointer;
-
 }
 
 .foterColumns li a {
@@ -447,17 +415,16 @@
     color: #a18a61;
 }
 
-
 .foterColumns ul li {
     transition: color 0.1s ease;
 }
 
-.buttonHover:hover {
+.reservaCita:hover {
     background-color: #867251;
     box-shadow: 0 3px 10px rgba(0, 0, 0, .16);
 }
 
-.buttonHover {
+.buttonHreservaCitaover {
     transition: all 0.3s ease;
 }
 
@@ -516,14 +483,23 @@
 
     .titleSection h2 {
         font-size: 64px;
-
     }
 
     .secDown button {
         font-size: 16px;
         margin: 15px;
+
     }
 
+    .foterColumns li a {
+        cursor: default;
+        -webkit-tap-highlight-color: transparent;
+
+    }
+
+    .NavTabs li {
+        cursor: default;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -583,6 +559,10 @@
         max-width: 40ch;
     }
 
+    .secDown {
+        box-shadow: 0 1px 6px rgba(0, 0, 0, .05);
+    }
+
     .razorImg {
         width: 60px;
         height: 60px;
@@ -608,7 +588,7 @@
     }
 
     .NavTabs {
-        gap: 23px;
+        gap: 20px;
     }
 
     .busName,
@@ -650,11 +630,16 @@
         justify-content: center;
     }
 
+    .secTopRev {
+        text-align: center;
+        font-size: 18px;
+    }
+
 }
 
 @media screen and (max-width: 459px) {
     .footer {
-        height: 400px;
+        height: 320px;
     }
 
     .titleSection h2 {
@@ -668,8 +653,17 @@
         margin-top: 10px;
     }
 
+    .NavContent {
+        justify-content: space-around;
+        align-items: center;
+    }
+
     .NavContent h3 {
         font-size: 16px;
+    }
+
+    .logo {
+        margin-left: 15px;
     }
 
     .reservarBtn {

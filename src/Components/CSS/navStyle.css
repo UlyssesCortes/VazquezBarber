@@ -22,7 +22,6 @@
     justify-content: space-between;
     align-items: center;
     width: 1200px;
-
 }
 
 .NavContent h3 {
@@ -57,9 +56,9 @@
 }
 
 .logoImg {
-    object-fit: cover;
-    height: 50px;
-    width: 20px;
+    height: 75px;
+    width: 75px;
+    margin: -25px;
 }
 
 .NavBar.shrink {
@@ -84,6 +83,7 @@
     cursor: pointer;
     font-weight: 600;
     transition: background-color 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .image-container {
@@ -93,7 +93,6 @@
     height: 30px;
     overflow: hidden;
 }
-
 
 .hover-image {
     position: absolute;
