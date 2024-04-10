@@ -5,9 +5,6 @@ import Hover3 from '../assets/linkHover3.png'
 import Lottie from "lottie-react"
 
 import logoAnimation from '../assets/BarberLines.json';
-import videoLoading from '../assets/VideoLoading1.json';
-import videoLoading2 from '../assets/VideoLoading2.json';
-
 
 
 window.addEventListener('scroll', function () {
